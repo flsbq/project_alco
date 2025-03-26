@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Alco Slave Detected</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="user-panel">
+      <button id="authButton" onclick="window.location.href='auth.html'">Войти</button>
+      <span id="userBalance"></span>
+    </div>
+  </header>
+  <div class="container">
+    <h1>🥴 WIN totalizer by Igors 🥴</h1>
+    <div class="week-grid" id="weekGrid"></div>
+    <div class="bet-form">
+      <select id="daySelect">
+        <option value="mon">Понедельник (XX.XX)</option>
+        <option value="tue">Вторник (XX.XX)</option>
+        <option value="wed">Среда (XX.XX)</option>
+        <option value="thu">Четверг (XX.XX)</option>
+        <option value="su">Воскресенье (XX.XX)</option>
+      </select>
+      <select id="betType">
+        <option value="1">Придёт вовремя</option>
+        <option value="2">Опоздает</option>
+        <option value="3">Придёт с перегаром, но вовремя</option>
+        <option value="4">Придёт с перегаром и опоздает</option>
+        <option value="5">Скажет, что работает из дома</option>
+      </select>
+      <input type="number" id="betAmount" placeholder="Сколько монет?" min="1">
+      <button onclick="placeBet()">Поставить!</button>
+    </div>
+    <div class="result" id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

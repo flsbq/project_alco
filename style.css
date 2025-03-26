@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #121212;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  h1 {
+    color: #ffcc00;
+  }
+  
+  .week-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .day-card {
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .bet-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  button {
+    background: #ffcc00;
+    color: #000;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #ffdd33;
+  }

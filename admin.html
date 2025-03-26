@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Админка | Alco Slave Detected</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>👑 Админ-панель</h1>
+    <div class="admin-panel">
+      <h3>Добавить пользователя</h3>
+      <input type="text" id="newLogin" placeholder="Логин">
+      <input type="password" id="newPassword" placeholder="Пароль">
+      <input type="number" id="newBalance" placeholder="Баланс" min="0" value="100">
+      <button onclick="addUser()">Добавить</button>
+      <h3>Список пользователей</h3>
+      <ul id="usersList"></ul>
+    </div>
+    <a href="index.html">На главную</a>
+    <button onclick="logout()" class="logout-btn">Выйти</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

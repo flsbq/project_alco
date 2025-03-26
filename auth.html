@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Вход | Alco Slave Detected</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 Вход / Регистрация</h1>
+    <div class="auth-form">
+        <h2>Вход для участников</h2>
+        <input type="text" id="userLogin" placeholder="Ваш логин">
+        <input type="password" id="userPassword" placeholder="Пароль">
+        <button onclick="loginUser()">Войти как участник</button>
+      
+        <h2>Вход для админа</h2>
+        <input type="password" id="adminPassword" placeholder="Админ-пароль">
+        <button onclick="loginAdmin()">Войти как админ</button>
+        
+        <p id="authMessage"></p>
+      </div>
+    <a href="index.html">На главную</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
